@@ -1,3 +1,191 @@
 body {
     margin: 0;
+    font-family: 'Smythe', 
+    system-ui,
+    -apple-system,
+    sans-serif;
+    font-size: 1rem;
 } 
+
+header {
+    background-image: url(/media/jimmys-diner-header-background-burger.png);
+    background-size: cover;
+    padding: 80px 40px 100px 80px;
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d2;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.menu-emoji {
+    font-size: 8rem;
+    padding: 20px
+}
+
+.menu-details {
+    font-size: 2em;
+    margin-right: auto;
+}
+
+.menu-name {
+    margin: 0;
+}
+
+.menu-ingredients {
+    margin: 0;
+    color: #8b8b8b;
+}
+
+.menu-price {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.add-btn {
+    align-self: start;
+    justify-self: end;
+    margin: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    border: 1px solid #dedede;
+    color: #3c3c3c;
+    background-color: #fff;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding: 80px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.order-title {
+    margin: 0 auto;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.remove-btn {
+    border: none;
+    background-color: transparent;
+    color: #bbb;
+    margin-right: auto;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.total-price-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-top: 2px solid #393333;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.5em;
+    background-color: #16DB99;
+    color: #fff;
+    border: none;
+    margin: 40px auto 0 auto;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 600px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 2000px black;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+input {
+    font-size: 2rem;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+#order-complete-message {
+    background-color: #ECFDF5;
+    color: #065F46;
+    width: 80%;
+    padding: 40px 0;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px auto;
+}
