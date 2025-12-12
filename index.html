@@ -12,23 +12,27 @@
     </head>
     <body>
         <header>
-            <h1>Jimmy's Diner</h1>
-            <h2>The best burgers and pizzas in town</h2>
+            <div class="container">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town</h2>
+            </div>
         </header>
         <main>
-            <div class="menu" id="menu">
-                <!-- Menu items will be dynamically inserted here -->
-            </div>
-            <div class="order hidden" id="order">
-                <h2 class="order-title">Your Order</h2>
-                <div id="order-items">
-                    <!-- Order items will be dynamically inserted here -->
+            <div class="container">
+                <div class="menu" id="menu">
+                    <!-- Menu items will be dynamically inserted here -->
                 </div>
-                <div class="total-price-container">
-                    <h3 id="total-price-label">Total price:</h3>
-                    <h3 id="total-price-dollars">$0.00</h3>
+                <div class="order hidden" id="order">
+                    <h2 class="order-title">Your Order</h2>
+                    <div id="order-items">
+                        <!-- Order items will be dynamically inserted here -->
+                    </div>
+                    <div class="total-price-container">
+                        <h3 id="total-price-label">Total price:</h3>
+                        <h3 id="total-price-dollars">$0.00</h3>
+                    </div>
+                    <button class="place-order-btn" id="complete-order-btn">Complete Order</button>
                 </div>
-                <button class="place-order-btn" id="complete-order-btn">Complete Order</button>
             </div>
         </main>
         <div class="modal hidden" id="modal">

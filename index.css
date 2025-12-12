@@ -1,65 +1,70 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
     font-family: 'Smythe', 
     system-ui,
     -apple-system,
     sans-serif;
-    font-size: 1rem;
 } 
+
+.container {
+    width: 85%;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 header {
     background-image: url(/media/jimmys-diner-header-background-burger.png);
     background-size: cover;
-    padding: 80px 40px 100px 80px;
+    padding: 2.5em 0;
     color: #fff;
 }
 
 h1 {
     margin: 0;
     padding: 0;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
     margin: 0;
     padding: 0;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
 }
 
 main {
     position: relative;
+    padding-top: 1em;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: center;;
-}
 
 .menu-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #d2d2d2;
-    width: 80%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 1em 0;
+    overflow-x: hidden;
 }
 
 .menu-emoji {
-    font-size: 8rem;
+    font-size: 4rem;
     padding: 20px
 }
 
 .menu-details {
-    font-size: 2em;
+    font-size: 1.5rem;
     margin-right: auto;
 }
 
@@ -68,23 +73,24 @@ main {
 }
 
 .menu-ingredients {
+    font-size: 1rem;
     margin: 0;
     color: #8b8b8b;
 }
 
 .menu-price {
     padding: 0;
-    margin: 20px 0;
+    margin-top: 0.5em;
 }
 
 .add-btn {
     align-self: start;
     justify-self: end;
-    margin: 20px;
+
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
+    width: 2em;
+    height: 2em;
+    font-size: 1.5rem;
     border: 1px solid #dedede;
     color: #3c3c3c;
     background-color: #fff;
@@ -95,13 +101,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
-    padding: 80px;
-    margin: 0 auto;
-    width: 80%;
+    margin: 1.5em auto;
 }
 
 .order-title {
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
 }
 
 .order-item {
@@ -109,7 +113,7 @@ main {
     justify-content: space-between;
     width: 100%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0.25em auto;
 }
 
 .remove-btn {
@@ -133,12 +137,12 @@ main {
 
 .place-order-btn {
     width: 100%;
-    padding: 20px 0;
+    padding: .75em 0;
     font-size: 1.5em;
     background-color: #16DB99;
     color: #fff;
     border: none;
-    margin: 40px auto 0 auto;
+    margin: 0.5em auto 0 auto;
 }
 
 .modal {
@@ -151,7 +155,7 @@ main {
     bottom: 0;
     right: 0;
     margin: auto;
-    height: 600px;
+    height: 55%;
     width: 80%;
     max-width: 800px;
     box-shadow: 0 0 2000px black;
@@ -159,14 +163,14 @@ main {
 
 .form-title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
 input {
-    font-size: 2rem;
-    padding: 20px;
-    margin: 20px 0;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0;
 }
 
 form {
@@ -174,6 +178,7 @@ form {
     flex-direction: column;
     margin: auto;
     width: 80%;
+    gap: 1em;
 }
 
 .hidden {
