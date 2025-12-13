@@ -155,9 +155,9 @@ main {
     bottom: 0;
     right: 0;
     margin: auto;
-    height: 55%;
-    width: 80%;
-    max-width: 800px;
+    height: 45%;
+    width: 90%;
+    max-width: 650px;
     box-shadow: 0 0 2000px black;
 }
 
