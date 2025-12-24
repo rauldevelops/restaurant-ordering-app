@@ -1,0 +1,21 @@
+{
+  "name": "restaurant-ordering-app",
+  "version": "1.0.0",
+  "description": "an ordering app for a restaurant",
+  "homepage": "https://github.com/rauldevelops/restaurant-ordering-app#readme",
+  "bugs": {
+    "url": "https://github.com/rauldevelops/restaurant-ordering-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauldevelops/restaurant-ordering-app.git"
+  },
+  "license": "ISC",
+  "author": "Raul Crespo",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
