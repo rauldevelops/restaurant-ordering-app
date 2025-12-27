@@ -1,20 +1,24 @@
-import { menuArray } from './data.js'
-
-const menuArrayHtml = menuArray.map(function(item) {
-    return `
-    <div class="menu-item">
-        <div class="menu-emoji">
-            ${item.emoji}
-        </div>
-        <div class="menu-details">
-            <h3 class="menu-name">${item.name}</h3>
-            <p class="menu-ingredients">${item.ingredients.join(', ')}</p>
-            <p class="menu-price">$${item.price}</p>
-        </div>
-        <button class="add-btn" data-item-id="${item.id}">+</button>
-    </div>
-        `
-})
+const menuArray = async function() {
+    const response = await fetch('api/menu')
+    const menuData = await response.json(response)
+    console.log(menuData)
+}
+menuArray()
+// const menuArrayHtml = menuArray.map(function(item) {
+//     return `
+//     <div class="menu-item">
+//         <div class="menu-emoji">
+//             ${item.emoji}
+//         </div>
+//         <div class="menu-details">
+//             <h3 class="menu-name">${item.name}</h3>
+//             <p class="menu-ingredients">${item.ingredients.join(', ')}</p>
+//             <p class="menu-price">$${item.price}</p>
+//         </div>
+//         <button class="add-btn" data-item-id="${item.id}">+</button>
+//     </div>
+//         `
+// })
 
 document.addEventListener('click', function(e) {
     if (e.target.dataset.itemId) {
@@ -102,4 +106,4 @@ function calculateTotalPrice() {
     return orderItemPricesArr.reduce((total, currentItem) => total + currentItem, 0)
 }
 
-document.getElementById('menu').innerHTML = menuArrayHtml.join('')
+// document.getElementById('menu').innerHTML = menuArrayHtml.join('')
