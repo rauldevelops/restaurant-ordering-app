@@ -1,5 +1,5 @@
 async function getMenuArray() {
-    const response = await fetch('/api/menu')
+    const response = await fetch('api/menu')
     const menuArray = await response.json(response)
     return menuArray
 }
@@ -108,4 +108,4 @@ function calculateTotalPrice() {
     return orderItemPricesArr.reduce((total, currentItem) => total + currentItem, 0)
 }
 
-// document.getElementById('menu').innerHTML = menuArrayHtml.join('')
+document.getElementById('menu').innerHTML = menuArrayHtml.join('')
